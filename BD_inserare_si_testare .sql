@@ -3,13 +3,13 @@ INSERT INTO partid (nume_partid, lider_partid)
 VALUES ('Partidul Social Democrat', 'Marcel Ciolacu');
 
 INSERT INTO partid (nume_partid, lider_partid)
-VALUES ('Uniunea Salva?i Rom‚nia', 'Dacian Ciolo?');
+VALUES ('Uniunea Salva?i Rom√¢nia', 'Dacian Ciolo?');
 
 INSERT INTO partid (nume_partid, lider_partid)
 VALUES ('Partidul Na?ional Liberal', 'Klaus Iohannis');
 
 INSERT INTO partid (nume_partid, lider_partid)
-VALUES ('Alian?a Liberalilor ?i Democra?ilor', 'C„lin Popescu-T„riceanu');
+VALUES ('Alian?a Liberalilor ?i Democra?ilor', 'C√£lin Popescu-T√£riceanu');
 
 --inserare CIRCUMSCRIPTIE
 INSERT INTO circumscriptie (nume, regiune)
@@ -66,7 +66,7 @@ INSERT INTO candidat (nume_candidat, pozitie_buletin, partid_id, candidat_info_i
 VALUES ('George Georgescu', 3, 3, 3);
 
 INSERT INTO candidat (nume_candidat, pozitie_buletin, partid_id, candidat_info_id)
-VALUES ('Elena Dr„gan', 4, 4, 4);
+VALUES ('Elena Dr√£gan', 4, 4, 4);
 
 -- Inserare ALEGERE
 INSERT INTO alegere (tip_alegere, data_alegerilor, candidat_info_id)
@@ -81,17 +81,17 @@ VALUES ('Preziden?iale', TO_DATE('2024-12-10', 'YYYY-MM-DD'), 3);
 INSERT INTO alegere (tip_alegere, data_alegerilor, candidat_info_id)
 VALUES ('Preziden?iale', TO_DATE('2024-12-10', 'YYYY-MM-DD'), 4);
 
--- Elena Dr„gan ?i George Georgescu vor participa la ambele date ale alegerilor preziden?iale
+-- Elena Dr√£gan ?i George Georgescu vor participa la ambele date ale alegerilor preziden?iale
 INSERT INTO alegere (tip_alegere, data_alegerilor, candidat_info_id)
-VALUES ('Preziden?iale', TO_DATE('2025-03-10', 'YYYY-MM-DD'), 4);  -- Elena Dr„gan
+VALUES ('Preziden?iale', TO_DATE('2025-03-10', 'YYYY-MM-DD'), 4);  -- Elena Dr√£gan
 
 INSERT INTO alegere (tip_alegere, data_alegerilor, candidat_info_id)
 VALUES ('Preziden?iale', TO_DATE('2025-03-10', 'YYYY-MM-DD'), 3);  -- George Georgescu
 
 -- Inserare ALEGERE Referendum
--- Trebuie s„ ai candidat_info_id = 5
+-- Trebuie s√£ ai candidat_info_id = 5
 INSERT INTO alegere (tip_alegere, data_alegerilor,candidat_info_id)
-VALUES ('Referendum', TO_DATE('2024-08-25', 'YYYY-MM-DD'), 5);  -- Ad„ug„m un candidat pentru Referendum
+VALUES ('Referendum', TO_DATE('2024-08-25', 'YYYY-MM-DD'), 5);  -- Ad√£ug√£m un candidat pentru Referendum
 
 -- Inserare CANDIDAT_ALEGERE_INFO
 INSERT INTO candidat_alegere_info (candidat_id, alegere_id)
@@ -103,16 +103,16 @@ VALUES (2, 2);  -- Maria Ionescu participa la alegerile 'Parlamentare'
 INSERT INTO candidat_alegere_info (candidat_id, alegere_id)
 VALUES (3, 3);  -- George Georgescu participa la alegerile 'Preziden?iale' pe 2024-12-10
 
--- Inser„m pentru George Georgescu la alegerile preziden?iale pe 2025-03-10
+-- Inser√£m pentru George Georgescu la alegerile preziden?iale pe 2025-03-10
 INSERT INTO candidat_alegere_info (candidat_id, alegere_id)
 VALUES (3, 6);  -- George Georgescu participa la alegerile 'Preziden?iale' pe 2025-03-10
 
 INSERT INTO candidat_alegere_info (candidat_id, alegere_id)
-VALUES (4, 4);  -- Elena Dr„gan participa la alegerile 'Preziden?iale' pe 2024-12-10
+VALUES (4, 4);  -- Elena Dr√£gan participa la alegerile 'Preziden?iale' pe 2024-12-10
 
--- Elena Dr„gan particip„ ?i la alegerile din 2025-03-10
+-- Elena Dr√£gan particip√£ ?i la alegerile din 2025-03-10
 INSERT INTO candidat_alegere_info (candidat_id, alegere_id)
-VALUES (4, 5);  -- Elena Dr„gan participa la alegerile 'Preziden?iale' pe 2025-03-10
+VALUES (4, 5);  -- Elena Dr√£gan participa la alegerile 'Preziden?iale' pe 2025-03-10
 
 SELECT a.tip_alegere, a.data_alegerilor, c.nume_candidat
 FROM alegere a
@@ -181,46 +181,46 @@ INSERT INTO vot (timp, cetatean_id, candidat_info_id)
 VALUES (TO_TIMESTAMP('2024-05-01 11:00:00', 'YYYY-MM-DD HH24:MI:SS'), 6, 1);
 
 --TESTARE DATE--
--- Afi?eaz„ datele despre sec?iile de votare ?i circumscrip?iile aferente.
+-- Afi?eaz√£ datele despre sec?iile de votare ?i circumscrip?iile aferente.
 SELECT s.numar_sectie, s.numar_maxim_alegatori, c.nume AS circumscriptie, c.regiune
 FROM sectie_votare s
 JOIN circumscriptie c ON s.circumscriptie_id = c.id;
 
---  Afi?eaz„ informa?iile despre cet„?eni ?i sec?iile de votare.
+--  Afi?eaz√£ informa?iile despre cet√£?eni ?i sec?iile de votare.
 SELECT cd.nume, cd.cnp, cd.varsta, s.numar_sectie, s.numar_maxim_alegatori
 FROM cetatean_detalii cd
 JOIN cetatean ce ON cd.cetatean_id = ce.id
 JOIN sectie_votare s ON ce.sectie_id = s.id;
 
--- Testarea constr‚ngerii PRIMARY KEY (PK)
+-- Testarea constr√¢ngerii PRIMARY KEY (PK)
 INSERT INTO cetatean (id, sectie_id, cod_vot)
 VALUES (1, 2, 'DEF456'); -- A doua inserare cu eroare
 
--- Testarea constr‚ngerii NOT NULL (NN)
+-- Testarea constr√¢ngerii NOT NULL (NN)
 INSERT INTO cetatean (id, sectie_id, cod_vot)
 VALUES (2, NULL, 'GHI789');
 
--- Testarea constr‚ngerii FOREIGN KEY (FK)
+-- Testarea constr√¢ngerii FOREIGN KEY (FK)
 INSERT INTO cetatean (id, sectie_id, cod_vot)
-VALUES (5, 999, 'MNO345'); -- Sec?ia de votare cu ID 999 nu exist„
+VALUES (5, 999, 'MNO345'); -- Sec?ia de votare cu ID 999 nu exist√£
 
 -- Testarea ?tergerii legate de FOREIGN KEY (FK)
--- Œncerc„m s„ ?tergem o sec?ie de votare care este referit„ de tabelul 'cetatean'
+-- √éncerc√£m s√£ ?tergem o sec?ie de votare care este referit√£ de tabelul 'cetatean'
 DELETE FROM sectie_votare
 WHERE id = 1;
 
--- Testarea modific„rii legate de FOREIGN KEY (FK)
--- Œncerc„m s„ modific„m 'sectie_id' Ón tabelul 'cetatean' cu o valoare care nu exist„ Ón 'sectie_votare'
+-- Testarea modific√£rii legate de FOREIGN KEY (FK)
+-- √éncerc√£m s√£ modific√£m 'sectie_id' √Æn tabelul 'cetatean' cu o valoare care nu exist√£ √Æn 'sectie_votare'
 UPDATE cetatean
 SET sectie_id = 995
 WHERE id = 1;
 
--- Testarea constr‚ngerii CHECK (CK)
--- Œncerc„m s„ inser„m un nume de jude? ?i regiune care nu exist„ Ón Rom‚nia
+-- Testarea constr√¢ngerii CHECK (CK)
+-- √éncerc√£m s√£ inser√£m un nume de jude? ?i regiune care nu exist√£ √Æn Rom√¢nia
 INSERT INTO circumscriptie (id, nume, regiune)
-VALUES (7, 'Paris', 'Œle-de-France');
+VALUES (7, 'Paris', '√éle-de-France');
 
---Testare constr‚ngerii CHECK (CK)
--- Œncerc„m s„ inser„m un vot cu o dat„ la care nu au avut loc alegeri
+--Testare constr√¢ngerii CHECK (CK)
+-- √éncerc√£m s√£ inser√£m un vot cu o dat√£ la care nu au avut loc alegeri
 INSERT INTO vot (timp, cetatean_id, candidat_info_id)
 VALUES (TO_TIMESTAMP('2025-05-01 11:00:00', 'YYYY-MM-DD HH24:MI:SS'), 6, 1);
