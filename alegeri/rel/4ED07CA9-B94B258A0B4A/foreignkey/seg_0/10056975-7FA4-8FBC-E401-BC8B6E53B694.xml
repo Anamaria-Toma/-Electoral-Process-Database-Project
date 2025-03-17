@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="10056975-7FA4-8FBC-E401-BC8B6E53B694" containerWithKeyObject="45DB4AD1-FF8C-EB5F-9DEE-E2B1D6A362EA" localFKIndex="07769332-EA39-CC76-DE31-DE5D3C6B7F15" name="Cetatean_detalii_Cetatean_FK">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>E60836B5-52A2-CC88-0E95-1B35E1817D59</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<referredTableLongName>Cetatean</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>499DFAD0-3AFF-24D0-6BC1-AA83153B95A3</referredTableID>
+<keyObject>1F32CEB0-5930-230F-2981-45C0FBC290FB</keyObject>
+<referredKeyID>1F32CEB0-5930-230F-2981-45C0FBC290FB</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

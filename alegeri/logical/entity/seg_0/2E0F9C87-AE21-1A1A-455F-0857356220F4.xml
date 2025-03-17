@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2E0F9C87-AE21-1A1A-455F-0857356220F4" name="Partid">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-10-25 07:27:40 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+<engineerTo>
+<item key="4ED07CA9-AA45-E043-F6FE-B94B258A0B4A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="1D6C6B7F-D9B9-F750-FD24-3D9957D59F47">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-10-25 07:27:46 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+<engineerTo>
+<item key="4ED07CA9-AA45-E043-F6FE-B94B258A0B4A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nume_partid" id="BA47AF02-A3E6-92C0-EFA3-583E4C0D9F0D">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-10-25 07:28:00 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+<engineerTo>
+<item key="4ED07CA9-AA45-E043-F6FE-B94B258A0B4A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Lider_partid" id="2B14E6C5-BCCD-6A92-FA0F-3E98C20342B1">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-10-25 07:28:32 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+<engineerTo>
+<item key="4ED07CA9-AA45-E043-F6FE-B94B258A0B4A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>55</dataTypeSize>
+<ownDataTypeParameters>55,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8BD11D7B-5293-74C6-27EE-5648EF969216" name="Partid PK">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-10-25 07:27:58 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+<engineerTo>
+<item key="4ED07CA9-AA45-E043-F6FE-B94B258A0B4A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1D6C6B7F-D9B9-F750-FD24-3D9957D59F47</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="8CF97DC0-9D51-7345-C21D-B123EE1C8063" name="Partid_nume_partid_uk">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-10-25 08:07:07 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+<engineerTo>
+<item key="4ED07CA9-AA45-E043-F6FE-B94B258A0B4A" value="true"/>
+</engineerTo>
+<newElementsIDs>BA47AF02-A3E6-92C0-EFA3-583E4C0D9F0D</newElementsIDs>
+<usedAttributes>
+<attributeRef>BA47AF02-A3E6-92C0-EFA3-583E4C0D9F0D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

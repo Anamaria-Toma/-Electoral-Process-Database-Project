@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="partid_candidat_fk" directorySegmentName="seg_0" id="DDE3D71F-C5C6-4ED1-8069-1864C32CB25F">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-10 07:10:04 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+<engineerTo>
+<item key="4ED07CA9-AA45-E043-F6FE-B94B258A0B4A" value="true"/>
+</engineerTo>
+<sourcePk>8BD11D7B-5293-74C6-27EE-5648EF969216</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>poate conține</nameOnSource>
+<nameOnTarget>aparține</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>2E0F9C87-AE21-1A1A-455F-0857356220F4</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>B1C2833F-762C-9CFD-48BC-868F0FF98419</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

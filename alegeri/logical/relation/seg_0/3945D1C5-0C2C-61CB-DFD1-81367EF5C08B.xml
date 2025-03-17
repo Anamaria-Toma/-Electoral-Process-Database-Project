@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="sectie_circumscriptie_fk" directorySegmentName="seg_0" id="3945D1C5-0C2C-61CB-DFD1-81367EF5C08B">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-10 07:05:08 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+<engineerTo>
+<item key="4ED07CA9-AA45-E043-F6FE-B94B258A0B4A" value="true"/>
+</engineerTo>
+<sourcePk>20BE4E96-CBAA-F7E0-42BB-B7A4664DB163</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>are</nameOnSource>
+<nameOnTarget>apaține</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>F28CA1CB-4C0A-99E8-421A-A0C1AED543A4</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>0A718807-0068-B791-064A-545DD50DF263</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

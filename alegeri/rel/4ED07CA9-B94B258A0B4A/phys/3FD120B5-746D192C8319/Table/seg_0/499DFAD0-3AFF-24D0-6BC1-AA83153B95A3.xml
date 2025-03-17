@@ -1,0 +1,44 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="Cetatean" directorySegmentName="seg_0" id="499DFAD0-3AFF-24D0-6BC1-AA83153B95A3">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:27:26 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID" id="0F332E0B-45C0-C26C-375F-A587348C9F6B">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:27:26 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+<autoIncrementDDL>IDENTITY_CLAUSE</autoIncrementDDL>
+</ColumnProxy>
+<ColumnProxy name="Sectie_votare_ID" id="9F8F97A4-3FD3-7910-8BC3-66A3035F172B">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:27:26 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Cod_de_vot" id="FBF0E8AD-F0CB-C3D2-46CE-CEFAEE3FC752">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:27:26 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Cetatean_Sectie_votare_FK" id="4BF4A725-F866-AD9B-26B1-C1A48D9B24CB">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:27:26 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Cetatean_PK" id="1F32CEB0-5930-230F-2981-45C0FBC290FB">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:27:26 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

@@ -1,0 +1,185 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="45DB4AD1-FF8C-EB5F-9DEE-E2B1D6A362EA" name="Cetatean_detalii">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>53F601AF-A61F-8888-FF61-2BCA3A1CC471</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Nume" id="5C337482-EF91-C7AC-5105-F710180D0743">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>8EA55C75-82B8-BDF4-3AE8-EB2418B2561F</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<constraintName>cetatean_nume_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>55</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(Nume) &gt; 1"/>
+</checkConstraint>
+<ownDataTypeParameters>55,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CNP" id="9715952F-E0D0-578E-669E-A5E941E5533E">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>1593778A-AB52-3EEB-C25C-5D47945481FE</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>13</dataTypePrecision>
+<ownDataTypeParameters>,13,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Serie" id="67B0DFD9-7C6F-FB01-4EAD-0BA9B19063A3">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>7FC56C93-1096-3DC5-7080-9B62FF381C30</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Numar" id="C4D2D474-9748-F75C-C40B-1385735B8578">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>DE246947-5294-95F4-87E0-28375B0E116D</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Varsta" id="E38FFCD2-BD41-F557-87F9-CC131792F4BE">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>6D2EF265-C91F-6930-CF7A-50E66CAF4EF5</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<constraintName>cetatean_varsta_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="Varsta &gt; 17"/>
+</checkConstraint>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Adresa" id="8E858582-840D-DE66-F47A-CF4C0AB590FD">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>F6B61702-7209-D251-F251-BD379558278A</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<constraintName>cetatean_adresa_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(Adresa) &gt; 1"/>
+</checkConstraint>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID1" id="7A7ADAA6-D5E5-DC3F-60AF-B8406228E1F8">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>720F5A05-8893-C2D5-DB23-95EAE2D0DB96</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID2" id="6BC64725-DB69-1596-4E36-B97D86C92B8F">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>507A2A41-6A0C-3794-AC99-EF463D637B6D</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cetatean_ID" id="56135DE2-0997-37E3-F9F1-817D4B1A183B">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>847195B3-CBEB-C678-034E-C9F39A03CDC6</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="10056975-7FA4-8FBC-E401-BC8B6E53B694" referredColumn="0F332E0B-45C0-C26C-375F-A587348C9F6B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AAE4B52A-EE62-0F10-B17D-2137BBC57A8A" name="Cetatean_detalii_PK">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>7E5FE72A-7CB3-7466-DDA1-746F6ED7F443</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="67B0DFD9-7C6F-FB01-4EAD-0BA9B19063A3"/>
+<colUsage columnID="C4D2D474-9748-F75C-C40B-1385735B8578"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3E5251B7-BC6C-54D2-8975-CA0A313FAC01" name="Cetatean_detalii_Serie_Numar_UN">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>46997391-F6C8-C5DC-4A70-098C61EF09C1</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="67B0DFD9-7C6F-FB01-4EAD-0BA9B19063A3"/>
+<colUsage columnID="C4D2D474-9748-F75C-C40B-1385735B8578"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D2A2E25E-FEFA-F32E-294E-D2CA3C967360" name="Cetatean_detalii__IDX">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>E60836B5-52A2-CC88-0E95-1B35E1817D59</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="56135DE2-0997-37E3-F9F1-817D4B1A183B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="07769332-EA39-CC76-DE31-DE5D3C6B7F15" name="Cetatean_detalii_Cetatean_FK">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>E60836B5-52A2-CC88-0E95-1B35E1817D59</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="56135DE2-0997-37E3-F9F1-817D4B1A183B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

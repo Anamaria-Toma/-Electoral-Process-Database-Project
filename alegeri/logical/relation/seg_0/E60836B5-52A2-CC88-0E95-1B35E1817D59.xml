@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="cetatean_detalii_fk" directorySegmentName="seg_0" id="E60836B5-52A2-CC88-0E95-1B35E1817D59">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-10 07:25:59 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+<engineerTo>
+<item key="4ED07CA9-AA45-E043-F6FE-B94B258A0B4A" value="true"/>
+</engineerTo>
+<sourcePk>141F489E-78FB-EC48-653C-15F533A668DA</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>este descris</nameOnSource>
+<nameOnTarget>oferă informații</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>B9499907-8F63-2DEB-A119-21BE04BE758D</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>53F601AF-A61F-8888-FF61-2BCA3A1CC471</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

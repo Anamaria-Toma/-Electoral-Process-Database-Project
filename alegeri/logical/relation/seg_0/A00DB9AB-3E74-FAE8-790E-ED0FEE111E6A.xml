@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="vot_candidat_alegere_fk" directorySegmentName="seg_0" id="A00DB9AB-3E74-FAE8-790E-ED0FEE111E6A">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 08:10:18 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+<engineerTo>
+<item key="4ED07CA9-AA45-E043-F6FE-B94B258A0B4A" value="true"/>
+</engineerTo>
+<useSurrogateKey>true</useSurrogateKey>
+<identifying>true</identifying>
+<nameOnSource>detaliază datele</nameOnSource>
+<nameOnTarget>se validează prin </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>5583A1B1-E278-9483-DBD1-5B9E0F02E8AB</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>218617ED-4648-DBD0-4CA0-3C66A0D4BDB9</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

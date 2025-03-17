@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1BC4F342-7017-5606-6C02-BF5C12701419" name="Partid">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>2E0F9C87-AE21-1A1A-455F-0857356220F4</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="E99E7EBB-F875-F9EC-775A-C91EAE58C42F">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>1D6C6B7F-D9B9-F750-FD24-3D9957D59F47</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nume_partid" id="CCA6A059-5281-B7D3-D1BA-1073F4FB2E69">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>BA47AF02-A3E6-92C0-EFA3-583E4C0D9F0D</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Lider_partid" id="3888BB37-44FA-F8D8-981C-74E1BFFEFEE5">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>2B14E6C5-BCCD-6A92-FA0F-3E98C20342B1</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>55</dataTypeSize>
+<ownDataTypeParameters>55,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4ADCC8D9-AF95-403B-2966-5D466FEBECDF" name="Partid_PK">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>8BD11D7B-5293-74C6-27EE-5648EF969216</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E99E7EBB-F875-F9EC-775A-C91EAE58C42F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E917D970-618A-8A4C-F2C6-3A67A32DF943" name="Partid_Nume_partid_UN">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>8CF97DC0-9D51-7345-C21D-B123EE1C8063</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CCA6A059-5281-B7D3-D1BA-1073F4FB2E69"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

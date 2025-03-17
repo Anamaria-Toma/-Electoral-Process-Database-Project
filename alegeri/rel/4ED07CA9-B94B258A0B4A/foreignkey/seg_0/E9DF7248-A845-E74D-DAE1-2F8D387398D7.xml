@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E9DF7248-A845-E74D-DAE1-2F8D387398D7" containerWithKeyObject="056CC08A-E870-EDE6-EBA4-0CD7C5860943" localFKIndex="8866CEA6-9204-132E-A724-D288A7D849F1" name="Vot_Cetatean_FK">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>F626579D-1F47-BC52-6B19-C0F7575C7B60</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<referredTableLongName>Cetatean</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>499DFAD0-3AFF-24D0-6BC1-AA83153B95A3</referredTableID>
+<keyObject>1F32CEB0-5930-230F-2981-45C0FBC290FB</keyObject>
+<referredKeyID>1F32CEB0-5930-230F-2981-45C0FBC290FB</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

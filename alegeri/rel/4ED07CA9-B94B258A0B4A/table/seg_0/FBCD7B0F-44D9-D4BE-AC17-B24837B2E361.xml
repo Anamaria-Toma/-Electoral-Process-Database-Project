@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FBCD7B0F-44D9-D4BE-AC17-B24837B2E361" name="Sectie_votare">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>0A718807-0068-B791-064A-545DD50DF263</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="167AE893-8F80-7CA2-D149-65E1CE18E72F">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>3E0E46DE-6A3D-AE86-1C3B-B3407ADB8249</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Numar_sectie" id="F89D367F-5C2B-36AE-9488-E338452BB4E9">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>7848DF4C-04E7-7CA3-B752-4AB83093475B</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Numar_maxim_alegatori" id="1393069D-1659-101C-5D9A-2BF3DF37EE22">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>7F0CDA9D-0A39-1BD5-FFC6-D36A99E3D780</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Circumscriptie_ID" id="7B895622-8A89-0B3F-C194-52A016147B31">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>A4E98ECA-C8C9-3142-8C38-147EAD5F1C32</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2C035843-C1D9-6120-3024-7A97BC534AE5" referredColumn="5171D8B7-97D9-23C2-01A2-DBFA64535E80"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="91742993-46B2-BC5C-104D-4BF9F5C145A3" name="Sectie_votare_PK">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>CE022A62-DAE7-4D36-6DF3-A9913D4A8AD2</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="167AE893-8F80-7CA2-D149-65E1CE18E72F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="93F17616-B8E8-7CF4-69AE-BECF71A91853" name="Sectie_votare_Circumscriptie_FK">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>3945D1C5-0C2C-61CB-DFD1-81367EF5C08B</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7B895622-8A89-0B3F-C194-52A016147B31"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C1AF191C-64B5-DB45-B8C9-5B554F7CC227" name="Alegere">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-10-25 07:21:37 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+<engineerTo>
+<item key="4ED07CA9-AA45-E043-F6FE-B94B258A0B4A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="EBB23A24-D6FE-CC89-5399-37A7E3897EAF">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-10-25 07:21:47 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+<engineerTo>
+<item key="4ED07CA9-AA45-E043-F6FE-B94B258A0B4A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Tip_alegere" id="979E8C90-F6BB-53A8-9763-141B498892F5">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-10-25 07:22:19 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+<engineerTo>
+<item key="4ED07CA9-AA45-E043-F6FE-B94B258A0B4A" value="true"/>
+</engineerTo>
+<constraintName>alegeri_tip_alegeri_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>22</dataTypeSize>
+<listOfValues>
+<valueDef value="Locale" description=""/>
+<valueDef value="Parlamentare" description=""/>
+<valueDef value="Parlamentul European" description=""/>
+<valueDef value="Prezidentiale" description=""/>
+<valueDef value="Referendum" description=""/>
+</listOfValues>
+<ownDataTypeParameters>22,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Data_alegerilor" id="FF9A3128-C6EE-F300-8E7D-1404FF23DDB8">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-10-25 07:25:40 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+<engineerTo>
+<item key="4ED07CA9-AA45-E043-F6FE-B94B258A0B4A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9C6D7CCF-E300-1882-8C81-034A317F328D" name="Alegere PK">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-10-25 07:21:59 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+<engineerTo>
+<item key="4ED07CA9-AA45-E043-F6FE-B94B258A0B4A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>EBB23A24-D6FE-CC89-5399-37A7E3897EAF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

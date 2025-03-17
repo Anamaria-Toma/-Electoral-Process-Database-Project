@@ -1,0 +1,28 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="Candidat_Alegere_info" directorySegmentName="seg_0" id="5A41BA6D-A7D2-C220-E25D-F6FEEF948CEA">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:27:26 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="Candidat_Alegere_info_ID" id="7FCCFE69-5E19-CB22-55C9-8694101DBC7D">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:27:26 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+<autoIncrementDDL>IDENTITY_CLAUSE</autoIncrementDDL>
+<notnullConstraintnameChanged>true</notnullConstraintnameChanged>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Candidat_Alegere_info_PK" id="2892CE15-7122-AE0E-16F6-AE0627A8604E">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:27:26 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="98A90430-B38C-B855-FB21-16A90355B3E7" name="Alegere">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>C1AF191C-64B5-DB45-B8C9-5B554F7CC227</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="38F80E85-48F6-31AB-5333-9FE7086992FC">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>EBB23A24-D6FE-CC89-5399-37A7E3897EAF</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tip_alegere" id="95FA3F7B-F05B-49C1-BB78-D76A359D2E48">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>979E8C90-F6BB-53A8-9763-141B498892F5</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<constraintName>alegeri_tip_alegeri_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>22</dataTypeSize>
+<listOfValues>
+<valueDef value="Locale" description=""/>
+<valueDef value="Parlamentare" description=""/>
+<valueDef value="Parlamentul European" description=""/>
+<valueDef value="Prezidentiale" description=""/>
+<valueDef value="Referendum" description=""/>
+</listOfValues>
+<ownDataTypeParameters>22,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Data_alegerilor" id="96582989-066E-F675-6374-68C5D8DAAEF6">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>FF9A3128-C6EE-F300-8E7D-1404FF23DDB8</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Candidat_Alegere_info_Candidat_Alegere_info_ID" id="B457905E-333F-0C3A-996E-1D9BB250F4A5">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F88EAEE9-9BA3-541A-989A-6F97958A5945" referredColumn="7FCCFE69-5E19-CB22-55C9-8694101DBC7D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0940CC6E-4762-7D9C-C7CF-F1DD1342397C" name="Alegere_PK">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>9C6D7CCF-E300-1882-8C81-034A317F328D</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="38F80E85-48F6-31AB-5333-9FE7086992FC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A464907D-1AA6-4713-DA44-0E4CB3E46B60" name="Alegere_Candidat_Alegere_info_FK">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>60B7A6BC-01C0-F019-0732-C3CA82B41387</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B457905E-333F-0C3A-996E-1D9BB250F4A5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

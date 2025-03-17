@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="50F6E03B-DCB1-B5C1-0FFA-34DB7975D86E" containerWithKeyObject="F053F311-575C-0806-3145-64F85D561B2B" localFKIndex="47A838E8-B56B-CD71-F4BE-91A45D72DBB9" name="Candidat_Candidat_Alegere_info_FK">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>24DE88F9-2865-9B18-1140-DDFEA31693CD</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<referredTableLongName>Candidat_Alegere_info</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>5A41BA6D-A7D2-C220-E25D-F6FEEF948CEA</referredTableID>
+<keyObject>2892CE15-7122-AE0E-16F6-AE0627A8604E</keyObject>
+<referredKeyID>2892CE15-7122-AE0E-16F6-AE0627A8604E</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Candidat_Alegere_info_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,37 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="Circumscriptie" directorySegmentName="seg_0" id="C3588E11-D31D-DAF9-B41D-3AB01580DB3F">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:27:26 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID" id="5171D8B7-97D9-23C2-01A2-DBFA64535E80">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:27:26 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+<autoIncrementDDL>IDENTITY_CLAUSE</autoIncrementDDL>
+</ColumnProxy>
+<ColumnProxy name="Nume" id="6771F01B-85BC-0315-FB6B-659489F148CC">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:27:26 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Regiune_geografica" id="69D5F051-6A07-04A5-9481-08102BD038A4">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:27:26 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Circumscriptie_PK" id="87358BC6-1631-B170-14A9-640FC357404D">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:27:26 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

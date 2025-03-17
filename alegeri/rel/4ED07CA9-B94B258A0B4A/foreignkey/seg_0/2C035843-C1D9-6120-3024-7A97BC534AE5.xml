@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2C035843-C1D9-6120-3024-7A97BC534AE5" containerWithKeyObject="FBCD7B0F-44D9-D4BE-AC17-B24837B2E361" localFKIndex="93F17616-B8E8-7CF4-69AE-BECF71A91853" name="Sectie_votare_Circumscriptie_FK">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>3945D1C5-0C2C-61CB-DFD1-81367EF5C08B</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<referredTableLongName>Circumscriptie</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C3588E11-D31D-DAF9-B41D-3AB01580DB3F</referredTableID>
+<keyObject>87358BC6-1631-B170-14A9-640FC357404D</keyObject>
+<referredKeyID>87358BC6-1631-B170-14A9-640FC357404D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

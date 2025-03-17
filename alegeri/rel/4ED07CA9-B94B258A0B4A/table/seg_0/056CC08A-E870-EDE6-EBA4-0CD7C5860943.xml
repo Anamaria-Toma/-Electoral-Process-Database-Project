@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="056CC08A-E870-EDE6-EBA4-0CD7C5860943" name="Vot">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>218617ED-4648-DBD0-4CA0-3C66A0D4BDB9</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="145F8519-71A9-F575-51B2-668D5D4C2B06">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>6BBBF1A9-069B-D44C-EDDE-C42F36DF70DB</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Timp_vot" id="069B1973-0831-A7CF-358C-06E5DD483C01">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>6EF071A5-C48B-2B40-5DA2-6B0E08599FF9</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cetatean_ID" id="7DA90632-A0DA-9A81-0249-FDD9942ACF76">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>1FEB1F05-174A-39B0-1E59-5A86D15617E0</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E9DF7248-A845-E74D-DAE1-2F8D387398D7" referredColumn="0F332E0B-45C0-C26C-375F-A587348C9F6B"/>
+</associations>
+</Column>
+<Column name="Candidat_Alegere_info_Candidat_Alegere_info_ID" id="AA4680E1-1BA0-E2B2-2D15-4EF6B8014D20">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B868CB31-A34C-39A0-0131-27A7B323C950" referredColumn="7FCCFE69-5E19-CB22-55C9-8694101DBC7D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CA280B35-1380-DF7B-48E5-7B5005362373" name="Vot_PK">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>6EAE3903-C215-55EA-73CA-6E0EB538437C</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="145F8519-71A9-F575-51B2-668D5D4C2B06"/>
+<colUsage columnID="AA4680E1-1BA0-E2B2-2D15-4EF6B8014D20"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8866CEA6-9204-132E-A724-D288A7D849F1" name="Vot_Cetatean_FK">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>F626579D-1F47-BC52-6B19-C0F7575C7B60</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7DA90632-A0DA-9A81-0249-FDD9942ACF76"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9E4683AF-5809-59E7-8549-087A06DC3A69" name="Vot_Candidat_Alegere_info_FK">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>A00DB9AB-3E74-FAE8-790E-ED0FEE111E6A</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AA4680E1-1BA0-E2B2-2D15-4EF6B8014D20"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

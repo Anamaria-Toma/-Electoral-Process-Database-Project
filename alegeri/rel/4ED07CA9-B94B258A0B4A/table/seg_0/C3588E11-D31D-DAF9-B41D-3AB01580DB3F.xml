@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C3588E11-D31D-DAF9-B41D-3AB01580DB3F" name="Circumscriptie">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>F28CA1CB-4C0A-99E8-421A-A0C1AED543A4</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="5171D8B7-97D9-23C2-01A2-DBFA64535E80">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>2BF00F18-0F7A-0841-B65D-054EDE37AEA6</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nume" id="6771F01B-85BC-0315-FB6B-659489F148CC">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>73864863-29E0-BE18-754F-6F0B0F0AE9C7</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<constraintName>circumscriptie_nume_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>21</dataTypeSize>
+<listOfValues>
+<valueDef value="Alba" description=""/>
+<valueDef value="Arad" description=""/>
+<valueDef value="Argeș" description=""/>
+<valueDef value="Bacău" description=""/>
+<valueDef value="Bihor" description=""/>
+<valueDef value="Bistrița-Năsăud" description=""/>
+<valueDef value="Botoșani" description=""/>
+<valueDef value="Brașov" description=""/>
+<valueDef value="Brăila" description=""/>
+<valueDef value="București" description=""/>
+<valueDef value="Buzău" description=""/>
+<valueDef value="Caraș-Severin" description=""/>
+<valueDef value="Cluj" description=""/>
+<valueDef value="Constanța" description=""/>
+<valueDef value="Covasna" description=""/>
+<valueDef value="Călărași" description=""/>
+<valueDef value="Diaspora" description=""/>
+<valueDef value="Dolj" description=""/>
+<valueDef value="Dâmbovița" description=""/>
+<valueDef value="Galați" description=""/>
+<valueDef value="Giurgiu" description=""/>
+<valueDef value="Gorj" description=""/>
+<valueDef value="Harghita" description=""/>
+<valueDef value="Hunedoara" description=""/>
+<valueDef value="Ialomița" description=""/>
+<valueDef value="Iași" description=""/>
+<valueDef value="Ilfov" description=""/>
+<valueDef value="Maramureș" description=""/>
+<valueDef value="Mehedinți" description=""/>
+<valueDef value="Mureș" description=""/>
+<valueDef value="Neamț" description=""/>
+<valueDef value="Olt" description=""/>
+<valueDef value="Prahova" description=""/>
+<valueDef value="Satu-Mare" description=""/>
+<valueDef value="Sibiu" description=""/>
+<valueDef value="Suceava" description=""/>
+<valueDef value="Sălaj" description=""/>
+<valueDef value="Teleorman" description=""/>
+<valueDef value="Timiș" description=""/>
+<valueDef value="Tulcea" description=""/>
+<valueDef value="Vaslui" description=""/>
+<valueDef value="Vrancea" description=""/>
+<valueDef value="Vâlcea" description=""/>
+</listOfValues>
+<ownDataTypeParameters>21,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Regiune_geografica" id="69D5F051-6A07-04A5-9481-08102BD038A4">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>E6279E5F-D3DC-093A-E7D3-1F438AEBA72A</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<constraintName>circumscriptie_regiune_geografica_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<listOfValues>
+<valueDef value="Banat" description=""/>
+<valueDef value="Bucovina" description=""/>
+<valueDef value="Crisana" description=""/>
+<valueDef value="Dobrogea" description=""/>
+<valueDef value="Maramures" description=""/>
+<valueDef value="Moldova" description=""/>
+<valueDef value="Muntenia" description=""/>
+<valueDef value="Oltenia" description=""/>
+<valueDef value="Transilvania" description=""/>
+</listOfValues>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="87358BC6-1631-B170-14A9-640FC357404D" name="Circumscriptie_PK">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>20BE4E96-CBAA-F7E0-42BB-B7A4664DB163</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5171D8B7-97D9-23C2-01A2-DBFA64535E80"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

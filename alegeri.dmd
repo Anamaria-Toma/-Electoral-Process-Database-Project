@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="alegeri" id="FB86D8F8-946F-0010-8241-8A9AF6B81AC3" version="3.5">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-10-22 10:22:50 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>FB86D8F8-946F-0010-8241-8A9AF6B81AC3</designId>
+</OSDM_Design>

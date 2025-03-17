@@ -1,0 +1,127 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F053F311-575C-0806-3145-64F85D561B2B" name="Candidat">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>B1C2833F-762C-9CFD-48BC-868F0FF98419</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="5D2BE447-C5CC-B332-D35A-0D6C9303217E">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>96D21EF6-D485-84CF-F85E-AD1490C91B73</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nume_candidar" id="2878CF23-AB02-6E5A-652C-11DF69962FE6">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>B5C16C2F-475D-A7C2-14C9-4B6DAADAB20D</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>55</dataTypeSize>
+<ownDataTypeParameters>55,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Pozitie_buletin_vot" id="DC44D96F-24DD-536A-B5B0-C21C7B56F057">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>2AD7BCB5-CD30-62B0-2823-EA5A9F4A06B3</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Partid_ID" id="A2D7554C-7830-94B8-D8E6-D3AAFCA08815">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>80A96306-1362-1AA3-6445-2CE5A5D104A1</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3023CDE6-0815-956E-BF30-2D990A833DC3" referredColumn="E99E7EBB-F875-F9EC-775A-C91EAE58C42F"/>
+</associations>
+</Column>
+<Column name="Candidat_Alegere_info_Candidat_Alegere_info_ID" id="6002E838-D487-0925-4194-F16119315A1A">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="50F6E03B-DCB1-B5C1-0FFA-34DB7975D86E" referredColumn="7FCCFE69-5E19-CB22-55C9-8694101DBC7D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CB7EE53F-A7F5-3E4F-3785-EA55F13B5BCE" name="Candidat_PK">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>F31DCA24-CDE9-D40C-5D15-BA9F404CF4E1</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5D2BE447-C5CC-B332-D35A-0D6C9303217E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E7B768A1-3466-AA8D-7C03-6DDA40F10FF2" name="Candidat_Pozitie_buletin_vot_UN">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>3E299535-DD9D-3F4D-71D0-1F9C290C8EDA</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DC44D96F-24DD-536A-B5B0-C21C7B56F057"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="47A838E8-B56B-CD71-F4BE-91A45D72DBB9" name="Candidat_Candidat_Alegere_info_FK">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>24DE88F9-2865-9B18-1140-DDFEA31693CD</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6002E838-D487-0925-4194-F16119315A1A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BCA4D4B2-C2A7-04E9-FF35-AF2EC4254A9B" name="Candidat_Partid_FK">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:15:01 UTC</createdTime>
+<generatorID>DDE3D71F-C5C6-4ED1-8069-1864C32CB25F</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A2D7554C-7830-94B8-D8E6-D3AAFCA08815"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

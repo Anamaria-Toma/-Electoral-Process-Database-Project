@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Alegere_info_fk" directorySegmentName="seg_0" id="60B7A6BC-01C0-F019-0732-C3CA82B41387">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 08:09:45 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+<engineerTo>
+<item key="4ED07CA9-AA45-E043-F6FE-B94B258A0B4A" value="true"/>
+</engineerTo>
+<identifying>true</identifying>
+<nameOnSource>oferă informații</nameOnSource>
+<nameOnTarget>este asociat</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>5583A1B1-E278-9483-DBD1-5B9E0F02E8AB</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C1AF191C-64B5-DB45-B8C9-5B554F7CC227</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

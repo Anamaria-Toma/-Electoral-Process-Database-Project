@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B1C2833F-762C-9CFD-48BC-868F0FF98419" name="Candidat">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-10-25 07:16:38 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+<engineerTo>
+<item key="4ED07CA9-AA45-E043-F6FE-B94B258A0B4A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="96D21EF6-D485-84CF-F85E-AD1490C91B73">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-10-25 07:16:48 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+<engineerTo>
+<item key="4ED07CA9-AA45-E043-F6FE-B94B258A0B4A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nume_candidar" id="B5C16C2F-475D-A7C2-14C9-4B6DAADAB20D">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-10-25 07:17:42 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+<engineerTo>
+<item key="4ED07CA9-AA45-E043-F6FE-B94B258A0B4A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>55</dataTypeSize>
+<ownDataTypeParameters>55,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Pozitie_buletin_vot" id="2AD7BCB5-CD30-62B0-2823-EA5A9F4A06B3">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-10-25 07:18:07 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+<engineerTo>
+<item key="4ED07CA9-AA45-E043-F6FE-B94B258A0B4A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID1" id="80A96306-1362-1AA3-6445-2CE5A5D104A1">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-10 07:10:04 UTC</createdTime>
+<generatorID>DDE3D71F-C5C6-4ED1-8069-1864C32CB25F</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<engineerTo>
+<item key="4ED07CA9-AA45-E043-F6FE-B94B258A0B4A" value="true"/>
+</engineerTo>
+<referedAttribute>1D6C6B7F-D9B9-F750-FD24-3D9957D59F47</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F31DCA24-CDE9-D40C-5D15-BA9F404CF4E1" name="Candidat PK">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-10-25 07:17:41 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+<engineerTo>
+<item key="4ED07CA9-AA45-E043-F6FE-B94B258A0B4A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>96D21EF6-D485-84CF-F85E-AD1490C91B73</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="3E299535-DD9D-3F4D-71D0-1F9C290C8EDA" name="candidat_pozitie_buletin_vot_uk">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-10-25 08:08:53 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+<engineerTo>
+<item key="4ED07CA9-AA45-E043-F6FE-B94B258A0B4A" value="true"/>
+</engineerTo>
+<newElementsIDs>2AD7BCB5-CD30-62B0-2823-EA5A9F4A06B3</newElementsIDs>
+<usedAttributes>
+<attributeRef>2AD7BCB5-CD30-62B0-2823-EA5A9F4A06B3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

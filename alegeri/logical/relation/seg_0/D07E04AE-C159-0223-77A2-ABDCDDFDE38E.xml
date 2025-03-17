@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_3" directorySegmentName="seg_0" id="D07E04AE-C159-0223-77A2-ABDCDDFDE38E">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-10 07:06:18 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+<engineerTo>
+<item key="4ED07CA9-AA45-E043-F6FE-B94B258A0B4A" value="true"/>
+</engineerTo>
+<sourcePk>CE022A62-DAE7-4D36-6DF3-A9913D4A8AD2</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>are</nameOnSource>
+<nameOnTarget>votează</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>0A718807-0068-B791-064A-545DD50DF263</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>B9499907-8F63-2DEB-A119-21BE04BE758D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

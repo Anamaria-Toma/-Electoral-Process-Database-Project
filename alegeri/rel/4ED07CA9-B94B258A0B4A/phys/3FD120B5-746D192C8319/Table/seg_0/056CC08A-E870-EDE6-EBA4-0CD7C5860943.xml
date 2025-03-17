@@ -1,0 +1,54 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="Vot" directorySegmentName="seg_0" id="056CC08A-E870-EDE6-EBA4-0CD7C5860943">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:27:26 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="Timp_vot" id="069B1973-0831-A7CF-358C-06E5DD483C01">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:27:26 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID" id="145F8519-71A9-F575-51B2-668D5D4C2B06">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:27:26 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+<autoIncrementDDL>IDENTITY_CLAUSE</autoIncrementDDL>
+</ColumnProxy>
+<ColumnProxy name="Cetatean_ID" id="7DA90632-A0DA-9A81-0249-FDD9942ACF76">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:27:26 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Candidat_Alegere_info_Candidat_Alegere_info_ID" id="AA4680E1-1BA0-E2B2-2D15-4EF6B8014D20">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:27:26 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Vot_Cetatean_FK" id="8866CEA6-9204-132E-A724-D288A7D849F1">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:27:26 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Vot_Candidat_Alegere_info_FK" id="9E4683AF-5809-59E7-8549-087A06DC3A69">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:27:26 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Vot_PK" id="CA280B35-1380-DF7B-48E5-7B5005362373">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-24 09:27:26 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

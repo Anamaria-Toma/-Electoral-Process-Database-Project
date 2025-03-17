@@ -1,0 +1,182 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="53F601AF-A61F-8888-FF61-2BCA3A1CC471" name="Cetatean_detalii">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-10-22 11:27:07 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+<engineerTo>
+<item key="4ED07CA9-AA45-E043-F6FE-B94B258A0B4A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Nume" id="8EA55C75-82B8-BDF4-3AE8-EB2418B2561F">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-10-22 11:29:10 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+<engineerTo>
+<item key="4ED07CA9-AA45-E043-F6FE-B94B258A0B4A" value="true"/>
+</engineerTo>
+<constraintName>cetatean_nume_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>55</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(Nume) &gt; 1"/>
+</checkConstraint>
+<ownDataTypeParameters>55,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CNP" id="1593778A-AB52-3EEB-C25C-5D47945481FE">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-10-22 11:29:39 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+<engineerTo>
+<item key="4ED07CA9-AA45-E043-F6FE-B94B258A0B4A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>13</dataTypePrecision>
+<ownDataTypeParameters>,13,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Serie" id="7FC56C93-1096-3DC5-7080-9B62FF381C30">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-10-25 07:59:52 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+<engineerTo>
+<item key="4ED07CA9-AA45-E043-F6FE-B94B258A0B4A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Numar" id="DE246947-5294-95F4-87E0-28375B0E116D">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-10-25 08:00:26 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+<engineerTo>
+<item key="4ED07CA9-AA45-E043-F6FE-B94B258A0B4A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Varsta" id="6D2EF265-C91F-6930-CF7A-50E66CAF4EF5">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-10-25 08:16:11 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+<engineerTo>
+<item key="4ED07CA9-AA45-E043-F6FE-B94B258A0B4A" value="true"/>
+</engineerTo>
+<constraintName>cetatean_varsta_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="Varsta &gt; 17"/>
+</checkConstraint>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Adresa" id="F6B61702-7209-D251-F251-BD379558278A">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-10-22 11:30:10 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+<engineerTo>
+<item key="4ED07CA9-AA45-E043-F6FE-B94B258A0B4A" value="true"/>
+</engineerTo>
+<constraintName>cetatean_adresa_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(Adresa) &gt; 1"/>
+</checkConstraint>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID1" id="720F5A05-8893-C2D5-DB23-95EAE2D0DB96">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-10 07:06:18 UTC</createdTime>
+<generatorID>D07E04AE-C159-0223-77A2-ABDCDDFDE38E</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<engineerTo>
+<item key="4ED07CA9-AA45-E043-F6FE-B94B258A0B4A" value="true"/>
+</engineerTo>
+<referedAttribute>3E0E46DE-6A3D-AE86-1C3B-B3407ADB8249</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID2" id="507A2A41-6A0C-3794-AC99-EF463D637B6D">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-10 07:08:09 UTC</createdTime>
+<generatorID>4F53DA57-2BFB-F728-DEA4-952A5A0FB1BE</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<engineerTo>
+<item key="4ED07CA9-AA45-E043-F6FE-B94B258A0B4A" value="true"/>
+</engineerTo>
+<referedAttribute>2BF00F18-0F7A-0841-B65D-054EDE37AEA6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID" id="847195B3-CBEB-C678-034E-C9F39A03CDC6">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-10 07:25:59 UTC</createdTime>
+<generatorID>E60836B5-52A2-CC88-0E95-1B35E1817D59</generatorID>
+<ownerDesignName>alegeri</ownerDesignName>
+<engineerTo>
+<item key="4ED07CA9-AA45-E043-F6FE-B94B258A0B4A" value="true"/>
+</engineerTo>
+<referedAttribute>FBA38479-1DAB-E56E-0B80-A2F5C38232E7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="46997391-F6C8-C5DC-4A70-098C61EF09C1" name="cetatean_serie_numar_uk">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-10-25 08:01:12 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+<engineerTo>
+<item key="4ED07CA9-AA45-E043-F6FE-B94B258A0B4A" value="true"/>
+</engineerTo>
+<newElementsIDs>7FC56C93-1096-3DC5-7080-9B62FF381C30,DE246947-5294-95F4-87E0-28375B0E116D</newElementsIDs>
+<usedAttributes>
+<attributeRef>7FC56C93-1096-3DC5-7080-9B62FF381C30</attributeRef>
+<attributeRef>DE246947-5294-95F4-87E0-28375B0E116D</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="7E5FE72A-7CB3-7466-DDA1-746F6ED7F443" name="Cetatean_detalii PK">
+<createdBy>Anamaria</createdBy>
+<createdTime>2024-11-10 19:10:01 UTC</createdTime>
+<ownerDesignName>alegeri</ownerDesignName>
+<engineerTo>
+<item key="4ED07CA9-AA45-E043-F6FE-B94B258A0B4A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7FC56C93-1096-3DC5-7080-9B62FF381C30</attributeRef>
+<attributeRef>DE246947-5294-95F4-87E0-28375B0E116D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
