@@ -105,7 +105,7 @@ CREATE OR REPLACE TRIGGER candidat_alegere_info_id_trg
 BEFORE INSERT ON candidat_alegere_info
 FOR EACH ROW
 BEGIN
-    -- Verific„m dac„ ID-ul nu a fost setat ?i Ól gener„m automat din secven?„
+    -- Verific√£m dac√£ ID-ul nu a fost setat ?i √Æl gener√£m automat din secven?√£
     IF :NEW.id IS NULL THEN
         :NEW.id := candidat_alegere_info_id_seq.NEXTVAL;
     END IF;
@@ -162,7 +162,7 @@ CREATE TABLE circumscriptie (
 
 ALTER TABLE circumscriptie
     ADD CONSTRAINT circumscriptie_nume_ck
-        CHECK (nume IN ('Alba', 'Arad', 'Arge?', 'Bac„u', 'Bihor', 'Bistri?a-Nasaud', 'Boto?ani', 'Bra?ov', 'Br„ila', 'Bucure?ti', 'Buz„u', 'Cara?-Severin', 'Cluj', 'Constan?a', 'Covasna','Craiova', 'C„l„ra?i', 'Diaspora', 'Dolj', 'D‚mbovi?a', 'Gala?i', 'Giurgiu', 'Gorj', 'Harghita', 'Hunedoara', 'Ialomi?a', 'Ia?i', 'Ilfov', 'Maramure?', 'Mehedin?i', 'Mure?', 'Neam?', 'Olt', 'Prahova', 'Satu-Mare', 'Sibiu', 'Suceava', 'S„laj', 'Teleorman', 'Timi?', 'Tulcea', 'Vaslui', 'Vrancea', 'V‚lcea'));
+        CHECK (nume IN ('Alba', 'Arad', 'Arge?', 'Bac√£u', 'Bihor', 'Bistri?a-Nasaud', 'Boto?ani', 'Bra?ov', 'Br√£ila', 'Bucure?ti', 'Buz√£u', 'Cara?-Severin', 'Cluj', 'Constan?a', 'Covasna','Craiova', 'C√£l√£ra?i', 'Diaspora', 'Dolj', 'D√¢mbovi?a', 'Gala?i', 'Giurgiu', 'Gorj', 'Harghita', 'Hunedoara', 'Ialomi?a', 'Ia?i', 'Ilfov', 'Maramure?', 'Mehedin?i', 'Mure?', 'Neam?', 'Olt', 'Prahova', 'Satu-Mare', 'Sibiu', 'Suceava', 'S√£laj', 'Teleorman', 'Timi?', 'Tulcea', 'Vaslui', 'Vrancea', 'V√¢lcea'));
 ALTER TABLE circumscriptie
     ADD CONSTRAINT circumscriptie_regiune_ck CHECK (regiune IN ('Banat', 'Bucovina', 'Cri?ana', 'Dobrogea', 'Maramure?', 'Moldova', 'Muntenia', 'Oltenia', 'Transilvania'));
 ALTER TABLE circumscriptie ADD CONSTRAINT circumscriptie_pk PRIMARY KEY (id);
@@ -215,7 +215,7 @@ CREATE OR REPLACE TRIGGER sectie_votare_id_trg
 BEFORE INSERT ON sectie_votare
 FOR EACH ROW
 BEGIN
-    -- Verific„m dac„ ID-ul nu a fost setat ?i Ól gener„m automat din secven?„
+    -- Verific√£m dac√£ ID-ul nu a fost setat ?i √Æl gener√£m automat din secven?√£
     IF :NEW.id IS NULL THEN
         :NEW.id := sectie_votare_id_seq.NEXTVAL;
     END IF;
@@ -239,7 +239,7 @@ CREATE OR REPLACE TRIGGER vot_id_trg
 BEFORE INSERT ON vot
 FOR EACH ROW
 BEGIN
-    -- Verific„m dac„ ID-ul nu a fost setat ?i Ól gener„m automat din secven?„
+    -- Verific√£m dac√£ ID-ul nu a fost setat ?i √Æl gener√£m automat din secven?√£
     IF :NEW.id IS NULL THEN
         :NEW.id := vot_id_seq.NEXTVAL;
     END IF;
@@ -251,7 +251,7 @@ FOR EACH ROW
 DECLARE
     v_count NUMBER;
 BEGIN
-    -- Compar„ doar data alegerii (f„r„ ora) cu data votului (f„r„ ora)
+    -- Compar√£ doar data alegerii (f√£r√£ ora) cu data votului (f√£r√£ ora)
     SELECT COUNT(*)
     INTO v_count
     FROM alegere a
@@ -263,9 +263,9 @@ BEGIN
         AND cai.alegere_id = a.id
     );
 
-    -- Dac„ nu g„se?te o alegere corespunz„toare, ridic„ eroare
+    -- Dac√£ nu g√£se?te o alegere corespunz√£toare, ridic√£ eroare
     IF v_count = 0 THEN
-        RAISE_APPLICATION_ERROR(-20001, 'Data votului trebuie s„ fie aceea?i cu data alegerii!');
+        RAISE_APPLICATION_ERROR(-20001, 'Data votului trebuie s√£ fie aceea?i cu data alegerii!');
     END IF;
 END;
 /
